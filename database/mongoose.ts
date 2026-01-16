@@ -11,25 +11,26 @@ declare global {
 
 let cached = global.mongooseCache;
 
-if (!cached){
+if (!cached) {
     cached = global.mongooseCache = { conn: null, promise: null };
 }
 
 export const connectToDatabase = async () => {
-    if(!MONGODB_URI){
-        throw new Error("MongoDB URI is missing");
+    if (!MONGODB_URI) {
+        console.warn("MongoDB URI is missing. Returning null connection.");
+        return null;
     }
 
-    if(cached.conn) return cached.conn;
+    if (cached.conn) return cached.conn;
 
-    if(!cached.promise) {
-        cached.promise = mongoose.connect(MONGODB_URI, {bufferCommands: false});
+    if (!cached.promise) {
+        cached.promise = mongoose.connect(MONGODB_URI, { bufferCommands: false });
     }
 
-    try{
+    try {
         cached.conn = await cached.promise;
     }
-    catch(err){
+    catch (err) {
         cached.promise = null;
         throw err;
     }
