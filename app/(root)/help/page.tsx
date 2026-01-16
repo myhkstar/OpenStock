@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 // Removed unused lucide-react imports
 
 export const metadata: Metadata = {
-  title: 'Help Center - OpenStock',
+  title: 'Help Center - SuperStock',
   description: 'Free help and community support - no barriers, just guidance',
 };
 
 export default function HelpPage() {
   const faqs = [
     {
-      question: "Is OpenStock really free forever?",
+      question: "Is SuperStock really free forever?",
       answer: "Yes! We're part of the Open Dev Society, which means we'll never lock knowledge behind paywalls. Core features remain free always. We run on community donations and the belief that financial tools should be accessible to everyone."
     },
     {
@@ -21,8 +21,8 @@ export default function HelpPage() {
       answer: "Navigate to any stock page and click the star icon. You can also search using the search bar and add directly from results. Everything is designed to be intuitive - no complex tutorials needed."
     },
     {
-      question: "Can I contribute to OpenStock?",
-      answer: "We'd love that! OpenStock is open source and community-driven. Check our GitHub for issues marked 'good first issue' or 'help wanted'. Every contribution, no matter how small, makes a difference."
+      question: "Can I contribute to SuperStock?",
+      answer: "We'd love that! SuperStock is open source and community-driven. Check our GitHub for issues marked 'good first issue' or 'help wanted'. Every contribution, no matter how small, makes a difference."
     },
     {
       question: "What if I find a bug or have a feature request?",
@@ -96,23 +96,23 @@ export default function HelpPage() {
           Because we believe the future belongs to those who build it openly.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-                href="https://discord.gg/jdJuEMvk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-550 transition-colors text-center inline-block"
-            >
-                Join Discord Community
-            </a>
+          <a
+            href="https://discord.gg/jdJuEMvk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-550 transition-colors text-center inline-block"
+          >
+            Join Discord Community
+          </a>
 
-            <a
-                href="mailto:opendevsociety@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 text-gray-200 px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors text-center inline-block"
-            >
-                Email Help Team
-            </a>
+          <a
+            href="mailto:opendevsociety@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800 text-gray-200 px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors text-center inline-block"
+          >
+            Email Help Team
+          </a>
         </div>
         <p className="text-xs text-gray-600 mt-4">
           ✨ All support is free, always. We&apos;re here because we care, not for profit.

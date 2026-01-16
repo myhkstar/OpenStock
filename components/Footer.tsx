@@ -12,14 +12,14 @@ const Footer = () => {
                         <Link href="/" className="flex items-center gap-2 mb-4">
                             <Image
                                 src="/assets/images/logo.png"
-                                alt="OpenStock"
+                                alt="SuperStock"
                                 width={150}
                                 height={38}
                                 className="brightness-0 invert"
                             />
                         </Link>
                         <p className="text-gray-400 mb-10 max-w-md">
-                            OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.
+                            SuperStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.
                         </p>
                         <div className="flex space-x-6">
                             <Link
