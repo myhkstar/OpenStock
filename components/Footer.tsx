@@ -19,11 +19,11 @@ const Footer = () => {
                             />
                         </Link>
                         <p className="text-gray-400 mb-10 max-w-md">
-                            SuperStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.
+                            SuperStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights.
                         </p>
                         <div className="flex space-x-6">
                             <Link
-                                href="https://github.com/Open-Dev-Society/OpenStock"
+                                href="https://github.com/myhkstar/SuperStock"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white transition-colors duration-200 relative group"
@@ -45,7 +45,7 @@ const Footer = () => {
                                 </span>
                             </Link>
                             <Link
-                                href="https://discord.gg/jdJuEMvk"
+                                href="https://discord.gg/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-blue-600 transition-colors duration-200 relative group"
